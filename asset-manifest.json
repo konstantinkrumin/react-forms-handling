@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/react-forms-handling/static/js/main.a0c2f5bf.chunk.js",
-    "main.js.map": "/react-forms-handling/static/js/main.a0c2f5bf.chunk.js.map",
+    "main.css": "/react-forms-handling/static/css/main.53d562c3.chunk.css",
+    "main.js": "/react-forms-handling/static/js/main.4619a8ac.chunk.js",
+    "main.js.map": "/react-forms-handling/static/js/main.4619a8ac.chunk.js.map",
     "runtime-main.js": "/react-forms-handling/static/js/runtime-main.95f814f8.js",
     "runtime-main.js.map": "/react-forms-handling/static/js/runtime-main.95f814f8.js.map",
-    "static/js/2.5a883b39.chunk.js": "/react-forms-handling/static/js/2.5a883b39.chunk.js",
-    "static/js/2.5a883b39.chunk.js.map": "/react-forms-handling/static/js/2.5a883b39.chunk.js.map",
+    "static/js/2.b091e23e.chunk.js": "/react-forms-handling/static/js/2.b091e23e.chunk.js",
+    "static/js/2.b091e23e.chunk.js.map": "/react-forms-handling/static/js/2.b091e23e.chunk.js.map",
     "index.html": "/react-forms-handling/index.html",
-    "precache-manifest.560e1c9891b608d52f24cc70e05110e0.js": "/react-forms-handling/precache-manifest.560e1c9891b608d52f24cc70e05110e0.js",
+    "precache-manifest.c6df0fbb2c1bccc5582d5cb5b9ba178f.js": "/react-forms-handling/precache-manifest.c6df0fbb2c1bccc5582d5cb5b9ba178f.js",
     "service-worker.js": "/react-forms-handling/service-worker.js",
-    "static/js/2.5a883b39.chunk.js.LICENSE.txt": "/react-forms-handling/static/js/2.5a883b39.chunk.js.LICENSE.txt"
+    "static/css/main.53d562c3.chunk.css.map": "/react-forms-handling/static/css/main.53d562c3.chunk.css.map",
+    "static/js/2.b091e23e.chunk.js.LICENSE.txt": "/react-forms-handling/static/js/2.b091e23e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.95f814f8.js",
-    "static/js/2.5a883b39.chunk.js",
-    "static/js/main.a0c2f5bf.chunk.js"
+    "static/js/2.b091e23e.chunk.js",
+    "static/css/main.53d562c3.chunk.css",
+    "static/js/main.4619a8ac.chunk.js"
   ]
 }
