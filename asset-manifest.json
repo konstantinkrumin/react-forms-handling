@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/react-forms-handling/static/js/main.a0c2f5bf.chunk.js",
+    "main.js.map": "/react-forms-handling/static/js/main.a0c2f5bf.chunk.js.map",
+    "runtime-main.js": "/react-forms-handling/static/js/runtime-main.95f814f8.js",
+    "runtime-main.js.map": "/react-forms-handling/static/js/runtime-main.95f814f8.js.map",
+    "static/js/2.5a883b39.chunk.js": "/react-forms-handling/static/js/2.5a883b39.chunk.js",
+    "static/js/2.5a883b39.chunk.js.map": "/react-forms-handling/static/js/2.5a883b39.chunk.js.map",
+    "index.html": "/react-forms-handling/index.html",
+    "precache-manifest.560e1c9891b608d52f24cc70e05110e0.js": "/react-forms-handling/precache-manifest.560e1c9891b608d52f24cc70e05110e0.js",
+    "service-worker.js": "/react-forms-handling/service-worker.js",
+    "static/js/2.5a883b39.chunk.js.LICENSE.txt": "/react-forms-handling/static/js/2.5a883b39.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.95f814f8.js",
+    "static/js/2.5a883b39.chunk.js",
+    "static/js/main.a0c2f5bf.chunk.js"
+  ]
+}
