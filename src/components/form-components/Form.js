@@ -25,16 +25,19 @@ class Form extends Component {
       }
     
       render() {
+        const isSelected = this.props.isItemSelected[this.props.requestNum] === true ? "form_show" : "form_hide"
+        const requestNum = this.props.requestNum
+
         return (
-          <form onSubmit={this.handleSubmit}>
-            <div>Обращение № {this.props.requestNum}</div>
+          <form className={isSelected} onSubmit={this.handleSubmit}>
+            <div>Обращение № {requestNum}</div>
             <div>
                 Представитель: 
-                <input type="text" name="representative" value={this.state.value} onChange={this.handleChange} />
+                <input type="text" name="representative" value={this.state.representative} onChange={this.handleChange} />
             </div>
             <div>
                 Обращение:
-                <textarea value={this.state.value} name="textInput" onChange={this.handleChange} />
+                <textarea name="textInput" value={this.state.textInput} onChange={this.handleChange} />
             </div>
             <input type="submit" value="Отправить" />
           </form>
