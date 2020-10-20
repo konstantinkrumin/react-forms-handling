@@ -6,7 +6,7 @@ const FormsContainer = ({ data }) => {
         <div>
             <h2>Forms Container</h2>
             {
-                data.map(item => <Form key={item} value={item} />)
+                data.map(item => <Form key={item} requestNum={item} />)
             }
         </div>
     )
