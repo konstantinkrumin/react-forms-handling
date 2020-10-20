@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 $white: #FAFAFA;
 $dark-gray: #BDBDBD;
 $light-gray: #EBEBEB;
 $accent-color: #4452B8;
+
+$main-font: 'Montserrat', sans-serif;
 
 * {
     margin: 0;
@@ -10,23 +14,44 @@ $accent-color: #4452B8;
 }
 
 // MAIN
-
 .main-window {
+    font-family: $main-font;
     display: flex;
     flex-direction: row;
 }
 
 // REQUEST LIST
-.requests-list-containter {}
+.requests-list-containter {
+    // width: 30%;
+}
 
 // REQUEST ITEM
 .request-item {
+    display: flex;
     cursor: pointer;
 }
 
 .request-item__active {
     background-color: $light-gray;
 }
+
+.request-item__image {
+    background-color: $dark-gray;
+    border: 1px solid $dark-gray;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.request-item__briefcase {
+    color: $white
+}
+
+.request-item__text {}
 
 .request-item__title {}
 
@@ -38,14 +63,27 @@ $accent-color: #4452B8;
 // FORM
 .form-component {}
 
-.form-component__element {}
+.form-component__element { 
+    font-family: $main-font; 
+    margin: 0.5rem;
+}
+
+.input {
+    padding: 1rem;
+    max-height: 20px;
+}
+
+.textarea {
+    padding: 0.5rem;
+    min-height: 200px;
+}
 
 .button {
     color: $white;
     background-color: $accent-color;
     cursor: pointer;
     outline: none;
-    padding: 5px;
+    padding: 10px 15px;
     // margin: $margin;
     border: 1px solid $accent-color;
     border-radius: 5px;
@@ -64,11 +102,11 @@ $accent-color: #4452B8;
 }
 
 // LOADING
-.loading-window {}
+.loading-window { font-family: $main-font; }
 
 .loading-window__message {}
 
 // EMPTY DATASET
-.empty-dataset-window {}
+.empty-dataset-window { font-family: $main-font; }
 
 .empty-dataset-window__message {}
