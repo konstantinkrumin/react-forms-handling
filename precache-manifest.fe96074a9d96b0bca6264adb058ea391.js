@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "81cdc128044740e761633717b4ab6c74",
+    "revision": "e82c405c5ee11b8305c61c4384efa5d1",
     "url": "/react-forms-handling/index.html"
   },
   {
-    "revision": "b41407b85f7ea131aaff",
-    "url": "/react-forms-handling/static/css/main.3bd2b7a9.chunk.css"
+    "revision": "50b8de760cb74c5ce9b1",
+    "url": "/react-forms-handling/static/css/main.e01afedc.chunk.css"
   },
   {
     "revision": "a9697d27f4074b9b647c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-forms-handling/static/js/2.b4299749.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b41407b85f7ea131aaff",
+    "revision": "50b8de760cb74c5ce9b1",
     "url": "/react-forms-handling/static/js/main.48aaa9d7.chunk.js"
   },
   {
