@@ -28,7 +28,9 @@ $main-font: 'Montserrat', sans-serif;
 // REQUEST ITEM
 .request-item {
     display: flex;
+    flex-direction: row;
     cursor: pointer;
+    padding-right: 1rem;
 }
 
 .request-item__active {
@@ -39,8 +41,8 @@ $main-font: 'Montserrat', sans-serif;
     background-color: $dark-gray;
     border: 1px solid $dark-gray;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,14 +50,19 @@ $main-font: 'Montserrat', sans-serif;
 }
 
 .request-item__briefcase {
-    color: $white
+    color: $white;
+    font-size: 1.2rem;
 }
 
-.request-item__text {}
+.request-item__text {
+    margin: 0.5rem 0;
+}
 
 .request-item__title {}
 
-.request-item__value {}
+.request-item__value {
+    color: rgb(130,130,130)
+}
 
 // FORMS CONTAINER
 .forms-container {}
@@ -65,18 +72,13 @@ $main-font: 'Montserrat', sans-serif;
 
 .form-component__element { 
     font-family: $main-font; 
-    margin: 0.5rem;
 }
 
-.input {
-    padding: 1rem;
-    max-height: 20px;
-}
+.form-component__title {}
 
-.textarea {
-    padding: 0.5rem;
-    min-height: 200px;
-}
+.input {}
+
+.textarea {}
 
 .button {
     color: $white;

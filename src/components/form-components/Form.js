@@ -32,7 +32,7 @@ class Form extends Component {
 
         return (
           <form className={isSelected + " form-component"} onSubmit={this.handleSubmit}>
-            <div className="form-component__element">Обращение № {requestNum}</div>
+            <div className="form-component__element form-component__title">Обращение № {requestNum}</div>
             <br />
             <input className="form-component__element input" type="text" name="representative" value={representative} placeholder="Представитель" onChange={this.handleChange} />
             <br />
