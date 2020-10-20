@@ -27,17 +27,19 @@ class Form extends Component {
       render() {
         const isSelected = this.props.isItemSelected[this.props.requestNum] === true ? "form_show" : "form_hide"
         const requestNum = this.props.requestNum
+        const representative = this.state.representative
+        const textInput = this.state.textInput
 
         return (
           <form className={isSelected} onSubmit={this.handleSubmit}>
             <div>Обращение № {requestNum}</div>
             <div>
                 Представитель: 
-                <input type="text" name="representative" value={this.state.representative} onChange={this.handleChange} />
+                <input type="text" name="representative" value={representative} onChange={this.handleChange} />
             </div>
             <div>
                 Обращение:
-                <textarea name="textInput" value={this.state.textInput} onChange={this.handleChange} />
+                <textarea name="textInput" value={textInput} onChange={this.handleChange} />
             </div>
             <input type="submit" value="Отправить" />
           </form>

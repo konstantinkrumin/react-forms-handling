@@ -23,14 +23,14 @@ function App() {
 
   function createObj (arr) {
     let newObj = {}
-    arr.map(item => newObj[item] = false)
+    arr.map((item, index) => index === 0 ? newObj[item] = true : newObj[item] = false)
     return newObj
   }
 
   function handleSelection(selectedItem) {
     const objCopy = JSON.parse(JSON.stringify(isItemSelected))
     for (let item in objCopy) {
-      item == selectedItem 
+      Number.parseInt(item) === selectedItem 
         ? objCopy[item] = true 
         : objCopy[item] = false
     }
@@ -42,8 +42,15 @@ function App() {
     setData(filteredData)
   }
 
+  useEffect(() => {
+    if (data.length > 0) {
+      handleSelection(data[0])
+    }
+  }, [data])
+
   return (
     <div className="main-window">
+      {console.log(isItemSelected)}
       <RequestsList data={data} requestName={requestName} handleSelection={handleSelection} />
       <FormsContainer data={data} handleFormSubmit={handleFormSubmit} isItemSelected={isItemSelected} />
     </div>
