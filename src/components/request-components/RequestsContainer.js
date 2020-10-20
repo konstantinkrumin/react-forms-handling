@@ -5,7 +5,7 @@ const RequestsContainer = ({ data, requestName, handleSelection, isItemSelected 
 
 
     return (
-        <div className="requests-list-containter">
+        <div className="requests-list-container">
             {
                 data.map(item => <RequestItem 
                                     key={item} 

@@ -18,11 +18,14 @@ $main-font: 'Montserrat', sans-serif;
     font-family: $main-font;
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    border: 1px solid green;
 }
 
 // REQUEST LIST
-.requests-list-containter {
-    // width: 30%;
+.requests-list-container {
+    width: 30%;
+    border: 1px solid blue;
 }
 
 // REQUEST ITEM
@@ -65,20 +68,37 @@ $main-font: 'Montserrat', sans-serif;
 }
 
 // FORMS CONTAINER
-.forms-container {}
+.forms-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid magenta;
+}
 
 // FORM
-.form-component {}
+.form-component {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
 
 .form-component__element { 
-    font-family: $main-font; 
+    font-family: $main-font;
+    max-width: 250px;
 }
 
 .form-component__title {}
 
-.input {}
+.input {
+    height: 25px;
+    padding: 10px;
+}
 
-.textarea {}
+.textarea {
+    height: 150px;
+    padding: 10px;
+}
 
 .button {
     color: $white;
@@ -86,7 +106,7 @@ $main-font: 'Montserrat', sans-serif;
     cursor: pointer;
     outline: none;
     padding: 10px 15px;
-    // margin: $margin;
+    margin-top: 1.5rem;
     border: 1px solid $accent-color;
     border-radius: 5px;
 
