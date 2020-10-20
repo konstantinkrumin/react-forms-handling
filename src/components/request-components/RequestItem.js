@@ -1,8 +1,8 @@
 import React from 'react'
 
-const RequestItem = ({ value, title }) => {
+const RequestItem = ({ value, title, handleSelection }) => {
     function handleClick() {
-        console.log("clicked on " + value)
+        handleSelection(value)
     }
 
     return (
