@@ -1,9 +1,10 @@
 import React from 'react'
 
-const RequestItem = () => {
+const RequestItem = ({ value, title }) => {
     return (
         <div>
-            RequestItem
+            <div>{title}</div>
+            <div>{value}</div>
         </div>
     )
 }
