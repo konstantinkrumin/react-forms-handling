@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import '../../helpers/fontAwesome';
 
 const RequestItem = ({ value, title, handleSelection, isItemSelected }) => {

@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
-$white: #FAFAFA;
-$dark-gray: #BDBDBD;
-$light-gray: #EBEBEB;
-$accent-color: #4452B8;
-
-$main-font: 'Montserrat', sans-serif;
+@import 'variables';
+@import 'requests-list';
+@import 'forms';
+@import 'loading-and-empty-dataset';
 
 * {
     margin: 0;
@@ -19,134 +16,22 @@ $main-font: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: row;
     width: 100vw;
-    border: 1px solid green;
 }
 
-// REQUEST LIST
-.requests-list-container {
-    width: 30%;
-    border: 1px solid blue;
-}
-
-// REQUEST ITEM
-.request-item {
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    padding-right: 1rem;
-}
-
-.request-item__active {
-    background-color: $light-gray;
-}
-
-.request-item__image {
-    background-color: $dark-gray;
-    border: 1px solid $dark-gray;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem;
-}
-
-.request-item__briefcase {
-    color: $white;
-    font-size: 1.2rem;
-}
-
-.request-item__text {
-    margin: 0.5rem 0;
-}
-
-.request-item__title {}
-
-.request-item__value {
-    color: rgb(130,130,130)
-}
-
-// FORMS CONTAINER
-.forms-container {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    border: 1px solid magenta;
-}
-
-// FORM
-.form-component {
-    border: 1px solid yellow;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
-
-.form-component__element { 
-    font-family: $main-font;
-    max-width: 250px;
-}
-
-.form-component__title {}
-
-.input {
-    height: 25px;
-    padding: 10px;
-}
-
-.textarea {
-    height: 150px;
-    padding: 10px;
-}
-
-.button {
-    color: $white;
-    background-color: $accent-color;
-    cursor: pointer;
-    outline: none;
-    padding: 10px 15px;
-    margin-top: 1.5rem;
-    border: 1px solid $accent-color;
-    border-radius: 5px;
-
-    transition: opacity 250ms;
-    
-
-    &:hover,
-    &:focus {
-        opacity: 0.8;
+// MEDIA QUERY
+@media (max-width: 500px) {
+    .main-window {
+        flex-direction: column;
     }
-}
 
-.form_hide {
-    display: none;
-}
+    .requests-list-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 5px;
+    }
 
-// LOADING
-.loading-window { 
-    font-family: $main-font;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loading-window__message {
-    font-size: 3rem;
-}
-
-// EMPTY DATASET
-.empty-dataset-window { 
-    font-family: $main-font; 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.empty-dataset-window__message {
-    font-size: 2rem;
+    .forms-container {
+        width: 100%;
+    }
 }

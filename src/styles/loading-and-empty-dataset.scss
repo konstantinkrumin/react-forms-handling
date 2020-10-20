@@ -1,0 +1,18 @@
+// LOADING & EMPTY DATASET
+.loading-window, 
+.empty-dataset-window { 
+    font-family: $main-font;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-window__message {
+    font-size: 3rem;
+}
+
+.empty-dataset-window__message {
+    font-size: 2rem;
+}
