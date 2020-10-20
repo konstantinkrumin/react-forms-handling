@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box}.main-window{display:flex;flex-direction:row}.request-item{cursor:pointer}.request-item__active{background-color:#ebebeb}.button{color:#fafafa;background-color:#4452b8;cursor:pointer;outline:none;padding:5px;border:1px solid #4452b8;border-radius:5px;transition:opacity .25s}.button:focus,.button:hover{opacity:.8}.form_hide{display:none}
+/*# sourceMappingURL=main.faaa3bbc.chunk.css.map */
