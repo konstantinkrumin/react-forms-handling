@@ -17,12 +17,14 @@ function App() {
   useEffect(() => {
     fetch(DATA_LINK)
       .then(response => response.json())
-      .then(json => {
-        setData(json.requestID)
-        setRequestName(json.dataType)
-        setIsItemSelected(createObj(json.requestID))
-        setLoading(false)
-      })
+      .then(
+        (result) => {
+          setData(result.requestID)
+          setRequestName(result.dataType)
+          setIsItemSelected(createObj(result.requestID))
+          setLoading(false)
+        }
+      )
   }, [])
 
   useEffect(() => {

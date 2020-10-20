@@ -124,11 +124,29 @@ $main-font: 'Montserrat', sans-serif;
 }
 
 // LOADING
-.loading-window { font-family: $main-font; }
+.loading-window { 
+    font-family: $main-font;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.loading-window__message {}
+.loading-window__message {
+    font-size: 3rem;
+}
 
 // EMPTY DATASET
-.empty-dataset-window { font-family: $main-font; }
+.empty-dataset-window { 
+    font-family: $main-font; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.empty-dataset-window__message {}
+.empty-dataset-window__message {
+    font-size: 2rem;
+}
