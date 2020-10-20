@@ -16,14 +16,12 @@ class Form extends Component {
         const name = event.target.name
         const value = event.target.value
 
-        this.setState({[name]: value});
+        this.setState({[name]: value})
       }
     
       handleSubmit(event) {
-        console.log('Form # ' + this.props.requestNum)
-        console.log('Name: ' + this.state.representative)
-        console.log('Textarea: ' + this.state.textInput)
-        event.preventDefault();
+        event.preventDefault()
+        this.props.handleFormSubmit(this.props.requestNum)
       }
     
       render() {

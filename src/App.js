@@ -19,10 +19,15 @@ function App() {
       })
   }, [])
 
+  function handleFormSubmit(requestNum) {
+    const filteredData = data.filter(item => item !== requestNum)
+    setData(filteredData)
+  }
+
   return (
     <div className="main-window">
       <RequestsList data={data} requestName={requestName} />
-      <FormsContainer data={data} />
+      <FormsContainer data={data} handleFormSubmit={handleFormSubmit} />
     </div>
   );
 }
