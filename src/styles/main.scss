@@ -1,4 +1,16 @@
+$white: #FAFAFA;
+$dark-gray: #BDBDBD;
+$light-gray: #EBEBEB;
+$accent-color: #4452B8;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 // MAIN
+
 .main-window {
     display: flex;
     flex-direction: row;
@@ -8,7 +20,13 @@
 .requests-list-containter {}
 
 // REQUEST ITEM
-.request-item {}
+.request-item {
+    cursor: pointer;
+}
+
+.request-item__active {
+    background-color: $light-gray;
+}
 
 .request-item__title {}
 
@@ -22,7 +40,24 @@
 
 .form-component__element {}
 
-.button {}
+.button {
+    color: $white;
+    background-color: $accent-color;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    // margin: $margin;
+    border: 1px solid $accent-color;
+    border-radius: 5px;
+
+    transition: opacity 250ms;
+    
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}
 
 .form_hide {
     display: none;

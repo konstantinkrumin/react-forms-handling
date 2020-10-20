@@ -55,7 +55,7 @@ function App() {
   if (loading === false && data.length !== 0) {
     return (
       <div className="main-window">
-        <RequestsList data={data} requestName={requestName} handleSelection={handleSelection} />
+        <RequestsList data={data} requestName={requestName} handleSelection={handleSelection} isItemSelected={isItemSelected} />
         <FormsContainer data={data} handleFormSubmit={handleFormSubmit} isItemSelected={isItemSelected} />
       </div>
     );
