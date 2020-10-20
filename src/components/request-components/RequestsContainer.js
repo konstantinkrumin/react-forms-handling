@@ -5,7 +5,7 @@ const RequestsContainer = ({ data, requestName, handleSelection }) => {
 
 
     return (
-        <div>
+        <div className="requests-list-containter">
             {
                 data.map(item => <RequestItem key={item} value={item} title={requestName} handleSelection={handleSelection} />)
             }

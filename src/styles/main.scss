@@ -1,7 +1,39 @@
+// MAIN
 .main-window {
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
 }
+
+// REQUEST LIST
+.requests-list-containter {}
+
+// REQUEST ITEM
+.request-item {}
+
+.request-item__title {}
+
+.request-item__value {}
+
+// FORMS CONTAINER
+.forms-container {}
+
+// FORM
+.form-component {}
+
+.form-component__element {}
+
+.button {}
 
 .form_hide {
     display: none;
 }
+
+// LOADING
+.loading-window {}
+
+.loading-window__message {}
+
+// EMPTY DATASET
+.empty-dataset-window {}
+
+.empty-dataset-window__message {}

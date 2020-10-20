@@ -6,9 +6,9 @@ const RequestItem = ({ value, title, handleSelection }) => {
     }
 
     return (
-        <div onClick={handleClick}>
-            <div>{title}</div>
-            <div>{value}</div>
+        <div className="request-item" onClick={handleClick}>
+            <div className="request-item__title">{title}</div>
+            <div className="request-item__value">{value}</div>
         </div>
     )
 }

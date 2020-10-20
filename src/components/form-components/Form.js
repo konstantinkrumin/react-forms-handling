@@ -31,17 +31,14 @@ class Form extends Component {
         const textInput = this.state.textInput
 
         return (
-          <form className={isSelected} onSubmit={this.handleSubmit}>
-            <div>Обращение № {requestNum}</div>
-            <div>
-                Представитель: 
-                <input type="text" name="representative" value={representative} onChange={this.handleChange} />
-            </div>
-            <div>
-                Обращение:
-                <textarea name="textInput" value={textInput} onChange={this.handleChange} />
-            </div>
-            <input type="submit" value="Отправить" />
+          <form className={isSelected + " form-component"} onSubmit={this.handleSubmit}>
+            <div className="form-component__element">Обращение № {requestNum}</div>
+            <br />
+            <input className="form-component__element" type="text" name="representative" value={representative} placeholder="Представитель" onChange={this.handleChange} />
+            <br />
+            <textarea className="form-component__element" name="textInput" value={textInput} placeholder="Суть обращения" onChange={this.handleChange} />
+            <br />
+            <input className="form-component__element button" type="submit" value="Отправить" />
           </form>
         );
       }
