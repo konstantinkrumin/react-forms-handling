@@ -5,9 +5,11 @@ import RequestsList from './components/request-components/RequestsContainer'
 import FormsContainer from "./components/form-components/FormsContainer"
 
 function App() {
+  
   const [data, setData] = useState([])
   const [requestName, setRequestName] = useState()
   const [isItemSelected, setIsItemSelected] = useState({})
+  const [loading, setLoading] = useState(true)
 
   const DATA_LINK = 'https://d76afe3b-6e74-4da7-b7ac-fff456f1bb50.mock.pstmn.io/data';
 
@@ -18,6 +20,7 @@ function App() {
         setData(json.requestID)
         setRequestName(json.dataType)
         setIsItemSelected(createObj(json.requestID))
+        setLoading(false)
       })
   }, [])
 
@@ -48,13 +51,20 @@ function App() {
     }
   }, [data])
 
-  return (
-    <div className="main-window">
-      {console.log(isItemSelected)}
-      <RequestsList data={data} requestName={requestName} handleSelection={handleSelection} />
-      <FormsContainer data={data} handleFormSubmit={handleFormSubmit} isItemSelected={isItemSelected} />
-    </div>
-  );
+  if (loading === false && data.length !== 0) {
+    return (
+      <div className="main-window">
+        {console.log(isItemSelected)}
+        <RequestsList data={data} requestName={requestName} handleSelection={handleSelection} />
+        <FormsContainer data={data} handleFormSubmit={handleFormSubmit} isItemSelected={isItemSelected} />
+      </div>
+    );
+  } else if (loading === false && data.length === 0) {
+    return <h1>Список обращений пуст</h1>
+  } else {
+    return <h1>Загрузка...</h1>
+  }
+
 }
 
 export default App;
