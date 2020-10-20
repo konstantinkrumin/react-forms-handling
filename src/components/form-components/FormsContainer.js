@@ -1,7 +1,7 @@
 import React from 'react'
 import Form from './Form'
 
-const FormsContainer = ({ data, handleFormSubmit }) => {
+const FormsContainer = ({ data, handleFormSubmit, isItemSelected }) => {
     return (
         <div>
             <h2>Forms Container</h2>

@@ -28,7 +28,13 @@ function App() {
   }
 
   function handleSelection(selectedItem) {
-    console.log(selectedItem)
+    const objCopy = JSON.parse(JSON.stringify(isItemSelected))
+    for (let item in objCopy) {
+      item == selectedItem 
+        ? objCopy[item] = true 
+        : objCopy[item] = false
+    }
+    setIsItemSelected(objCopy)
   }
 
   function handleFormSubmit(requestNum) {
@@ -39,7 +45,7 @@ function App() {
   return (
     <div className="main-window">
       <RequestsList data={data} requestName={requestName} handleSelection={handleSelection} />
-      <FormsContainer data={data} handleFormSubmit={handleFormSubmit} />
+      <FormsContainer data={data} handleFormSubmit={handleFormSubmit} isItemSelected={isItemSelected} />
     </div>
   );
 }
