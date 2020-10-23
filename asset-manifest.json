@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-forms-handling/static/css/main.24f7e801.chunk.css",
+    "main.css": "/react-forms-handling/static/css/main.70322091.chunk.css",
     "main.js": "/react-forms-handling/static/js/main.f8aa4e63.chunk.js",
     "main.js.map": "/react-forms-handling/static/js/main.f8aa4e63.chunk.js.map",
     "runtime-main.js": "/react-forms-handling/static/js/runtime-main.95f814f8.js",
@@ -8,15 +8,15 @@
     "static/js/2.b4299749.chunk.js": "/react-forms-handling/static/js/2.b4299749.chunk.js",
     "static/js/2.b4299749.chunk.js.map": "/react-forms-handling/static/js/2.b4299749.chunk.js.map",
     "index.html": "/react-forms-handling/index.html",
-    "precache-manifest.59dde5c5aa85f316612a73094c6d6103.js": "/react-forms-handling/precache-manifest.59dde5c5aa85f316612a73094c6d6103.js",
+    "precache-manifest.fad24ad91105dc02be078674866121f6.js": "/react-forms-handling/precache-manifest.fad24ad91105dc02be078674866121f6.js",
     "service-worker.js": "/react-forms-handling/service-worker.js",
-    "static/css/main.24f7e801.chunk.css.map": "/react-forms-handling/static/css/main.24f7e801.chunk.css.map",
+    "static/css/main.70322091.chunk.css.map": "/react-forms-handling/static/css/main.70322091.chunk.css.map",
     "static/js/2.b4299749.chunk.js.LICENSE.txt": "/react-forms-handling/static/js/2.b4299749.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.95f814f8.js",
     "static/js/2.b4299749.chunk.js",
-    "static/css/main.24f7e801.chunk.css",
+    "static/css/main.70322091.chunk.css",
     "static/js/main.f8aa4e63.chunk.js"
   ]
 }
