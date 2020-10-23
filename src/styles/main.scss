@@ -19,7 +19,7 @@
 }
 
 // MEDIA QUERY
-@media (max-width: 500px) {
+@media (max-width: 620px) {
     .main-window {
         flex-direction: column;
     }
@@ -27,7 +27,7 @@
     .requests-list-container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-gap: 5px;
     }
 

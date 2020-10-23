@@ -9,16 +9,15 @@
     align-items: center;
 }
 
-.loading-window__message {
-    font-size: 3rem;
+.loading-window__loader {
     background-color: transparent;
-    width: 25px;
-    height: 25px;
-    border: 3px dashed blue;
+    width: 75px;
+    height: 75px;
+    border: 3px dashed $accent-color;
     border-radius: 50%;
     
     animation-name: loading;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
