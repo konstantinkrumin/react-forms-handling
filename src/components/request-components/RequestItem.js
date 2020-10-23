@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../../helpers/fontAwesome';
@@ -21,6 +23,13 @@ const RequestItem = ({ value, title, handleSelection, isItemSelected }) => {
             </div>
         </div>
     )
+}
+
+RequestItem.propTypes = {
+    value: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    handleSelection: PropTypes.func.isRequired,
+    isItemSelected: PropTypes.object.isRequired
 }
 
 export default RequestItem

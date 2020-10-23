@@ -11,7 +11,30 @@
 
 .loading-window__message {
     font-size: 3rem;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border: 3px dashed blue;
+    border-radius: 50%;
+    
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes loading {
+    0% {
+      transform: rotate(0.0turn)
+    }
+    
+    50% {
+      transform: rotate(0.5turn)
+    }
+    
+    100% {
+      transform: rotate(1.0turn)
+    }
+  }
 
 .empty-dataset-window__message {
     font-size: 2rem;

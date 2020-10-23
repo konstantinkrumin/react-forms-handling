@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import RequestItem from './RequestItem'
 
@@ -18,6 +19,13 @@ const RequestsContainer = ({ data, requestName, handleSelection, isItemSelected 
                 }
         </div>
     )
+}
+
+RequestsContainer.propTypes = {
+    data: PropTypes.array.isRequired,
+    requestName: PropTypes.string.isRequired,
+    handleSelection: PropTypes.func.isRequired,
+    isItemSelected: PropTypes.object.isRequired
 }
 
 export default RequestsContainer
